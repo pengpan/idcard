@@ -212,7 +212,7 @@
             $temp.val($(_that).text()).select();
             document.execCommand("copy");
             $temp.remove();
-			layer.msg('复制成功',{offset: '80%', time:1000 });
+			layer.msg('已复制',{offset: '80%', time:1000 });
 			$('.clipboard').removeClass('red-border');
 			$(_that).addClass('red-border');
         }
