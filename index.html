@@ -73,7 +73,7 @@
         function getIdNo() {
             var coefficientArray = ["7", "9", "10", "5", "8", "4", "2", "1", "6", "3", "7", "9", "10", "5", "8", "4", "2"]; // 加权因子
             var lastNumberArray = ["1", "0", "X", "9", "8", "7", "6", "5", "4", "3", "2"]; // 校验码
-            var address = "420101"; // 住址
+            var address = "110101"; // 住址
 
             var birthday = "" + (parseInt(40 * Math.random()) + 1960) + "0" + (parseInt(9 * Math.random()) + 1) + (parseInt(20 * Math.random()) + 10); // 生日
             var s = Math.floor(Math.random() * 10).toString() + Math.floor(Math.random() * 10).toString() + Math.floor(Math.random() * 10).toString();
@@ -192,7 +192,7 @@
 
         function genrate() {
             trs = '';
-            for (var i = 1; i <= 20; i++) {
+            for (var i = 1; i <= 200; i++) {
                 trs = trs + '<tr><td>' + i + '</td><td><span class="clipboard">' + getName() + '</span></td><td> 手机号：<span class="clipboard">' + getMoble() + '</span><br/>身份证：<span class="clipboard">' + getIdNo() + '</span><br/>银行卡：<span class="clipboard">' + getBankAccount() + '</span></td></tr>';
             }
             trs = '<table>' + trs + '</table>';
